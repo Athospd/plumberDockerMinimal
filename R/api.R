@@ -9,5 +9,5 @@ teste <- function(req, msg = "") {
 #* Endpoint que recebe um imagem
 #* @post /imagem
 recebe_imagem <- function(req) {
-  browser()
+  paste0("A mensagem foi: ", "POST", " ", timestamp())
 }
