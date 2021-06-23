@@ -30,7 +30,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_5d9e7bb75b984e5982a457f60cb29bba }}/rocker/r-ver:${{ github.sha }}
+        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_5d9e7bb75b984e5982a457f60cb29bba }}/asnapp:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:

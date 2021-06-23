@@ -1,3 +1,3 @@
 library(plumber)
 api <- plumb("R/api.R")
-api$run(port = 8000, swagger = FALSE)
+api$run(host = "0.0.0.0", port = 8000, swagger = TRUE)
